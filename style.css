@@ -80,7 +80,7 @@
     padding: 0.5%;
   }
   .collage .collage-item:first-child .collage-item-image {
-    background-image: url("a.jpeg");
+    background-image: url(a.jpeg);
     -webkit-transform-origin: left top;
             transform-origin: left top;
   }
