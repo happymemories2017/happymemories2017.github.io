@@ -98,22 +98,22 @@
   }
   
   .collage .collage-item:first-child .collage-item-image {
-    background-image: url("/home/sukalyan/Downloads/a.jpeg");
+    background-image: url("a.jpeg");
     -webkit-transform-origin: left top;
             transform-origin: left top;
   }
   .collage .collage-item:nth-child(2) .collage-item-image {
-    background-image: url("/home/sukalyan/Downloads/h.jpeg");
+    background-image: url("h.jpeg");
     -webkit-transform-origin: right top;
             transform-origin: right top;
   }
   .collage .collage-item:nth-child(3) .collage-item-image {
-    background-image: url("/home/sukalyan/Downloads/ac.jpeg");
+    background-image: url("ac.jpeg");
     -webkit-transform-origin: left bottom;
             transform-origin: left bottom;
   }
   .collage .collage-item:nth-child(4) .collage-item-image {
-    background-image: url("/home/sukalyan/Downloads/e.jpeg");
+    background-image: url("e.jpeg");
     -webkit-transform-origin: right bottom;
             transform-origin: right bottom;
   }
