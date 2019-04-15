@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Maths Quiz</title>
+	<link href="https://fonts.googleapis.com/css?family=Arvo|Roboto|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">   
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+</head>
+<body>
+
+    <div id="wrapper">
+        
+        <form>
+            <h1 id="quesCount"></h1>
+            <br />
+            <br />
+            <br/>
+            <div id ="time">
+                    Time left = <span id="timer"></span>
+                </div>
+
+            <div id="questionDiv">
+                <h2 id="ques"></h2>
+                <br />
+
+                <span id="radioButtons">
+                    <input type="radio" name="ans" class="Opt" value="1" id="1" /><label id="aOptl" for="1"></label><br />
+                    <input type="radio" name="ans" class="Opt" value="2" id="2" /><label id="bOptl" for="2"></label><br />
+                    <input type="radio" name="ans" class="Opt" value="3" id="3" /><label id="cOptl" for="3"></label><br />
+                    <input type="radio" name="ans" class="Opt" value="4" id="4" /><label id="dOptl" for="4"></label>
+                </span>
+                <br />
+                <br />
+
+                <div id="nav">
+                    <input type="button" id="previous" value="Previous" disabled/>
+                    <input type="button" id="review" value ="Review" />
+                    <input type="button" id="next" value="Next" />
+                    <input type="button" id="submit" value="Submit" />
+                </div>
+                <label id="NextTooltip" class="ToolTip">Go to Next Question</label>
+                <label id="PreviousTooltip" class="ToolTip">Go to Previous Question</label>
+                <label id="SubmitTooltip" class="ToolTip">Submit Answers</label>
+                <label id="resetMessage" class="ToolTip">Cannot interact with Quiz after submission.<br />Please Reset quiz to try again.</label>
+                <br />
+                <br />
+
+                <label id="score"></label>
+            </div>
+
+            <div id ="boxes">
+                <input type="button" class="box" id="1" value="1" onclick="changeQ(this)" style="height:30px; width:30px; background-color:pink; margin-left:20px;"/>
+                <input type="button" class="box" id="2" value ="2" onclick="changeQ(this)" style="height:30px; width:30px; background-color:pink; margin-left:20px;"/>
+                <input type="button" class="box" id="3" value="3" onclick="changeQ(this)" style="height:30px; width:30px; background-color:pink; margin-left:20px;"/>
+                <input type="button" class="box" id="4" value="4" onclick="changeQ(this)" style="height:30px; width:30px; background-color:pink; margin-left:20px;"/>
+                <input type="button" class="box" id="5" value="5" onclick="changeQ(this)" style="height:30px; width:30px; background-color:pink; margin-left:20px;"/>
+                <input type="button" class="box" id="6" value="6" onclick="changeQ(this)" style="height:30px; width:30px; background-color:pink; margin-left:20px;"/>
+                <input type="button" class="box" id="7" value="7" onclick="changeQ(this)" style="height:30px; width:30px; background-color:pink; margin-left:20px;"/>
+                <input type="button" class="box" id="8" value="8" onclick="changeQ(this)" style="height:30px; width:30px; background-color:pink; margin-left:20px;"/>
+                <input type="button" class="box" id="9" value="9" onclick="changeQ(this)" style="height:30px; width:30px; background-color:pink; margin-left:20px;"/>
+                <input type="button" class="box" id="10" value="10" onclick="changeQ(this)" style="height:30px; width:30px; background-color:pink; margin-left:20px;"/>
+
+            </div>
+
+        </form>
+    </div>
+
+    <span id="confBox">
+        You still have some incomplete questions. Are you sure you want to submit?<br />
+        <input type="button" value="Yes" id="yesChoice" />
+        <input type="button" value="No" id="noChoice" />
+    </span>
+</body>
+<script src="test1.js"></script>
+</html>
