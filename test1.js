@@ -142,7 +142,7 @@ function changeQ(elem){
     options(val - 1);
 
     if (!needsReset)
-        setValue('score', 'Your score: ' + calcScore());
+        setValue('score', 'Your score: ' + 0);
     handleSwitchToggle();
 }
 
@@ -165,7 +165,7 @@ function next() {
         document.getElementById('previous').removeAttribute('disabled');
 
     if (!needsReset)
-        setValue('score', 'Your score: ' + calcScore());
+        setValue('score', 'Your score: ' + 0);
     handleSwitchToggle();
 }
 function previous() {
@@ -180,7 +180,7 @@ function previous() {
     document.getElementById('next').removeAttribute('disabled');
 
     if (!needsReset)
-        setValue('score', 'Your score: ' + calcScore());
+        setValue('score', 'Your score: ' + 0);
     handleSwitchToggle();
 }
 function submit() {
@@ -263,10 +263,12 @@ function handleSubmit() {
 
 function calcScore() {
     var score = 0;
-    var correctAnswers = [1, 2, 1, 1, 2, 3];
+    var correctAnswers = [3, 0, 1, 2, 2, 1,2,2,2,3];
     for (var i = 0; i < answers.length; i++)
         if (answers[i] - 1 == correctAnswers[i])
             score++;
+        else if(answers[i]!=null)
+            score=score-0.25;
     return score;
 }
 
